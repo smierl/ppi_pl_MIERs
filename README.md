@@ -36,8 +36,6 @@ Windows, Linux
 ### Metodologías de Desarrollo de Software:
 SCRUM, Agile
 
-## Experiencia Laboral:
-No tengo experiencia laboral previa relacionada con la ingeniería de sistemas e informática.
 
 ## Idiomas:
 
