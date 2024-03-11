@@ -17,7 +17,7 @@ Estudiante de Ingeniería de Sistemas e Informática en el sexto semestre con un
 
 ## Educación:
 
-Licenciatura en Ingeniería de Sistemas e Informática
+Ingeniería de Sistemas e Informática
 Universidad Nacional de Colombia, sede Medellin.
 Cursando el sexto semestre.
 
