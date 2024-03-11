@@ -1,4 +1,4 @@
-# ppi_pl_MIERs
+# Código a Producción: Un Viaje con DevOps
 
 ## Descripción del Proyecto:
 En este repositorio, estoy desarrollando un modelo de servicios freelance centrado en DevOps. La idea es utilizar plataformas como Upwork Freelancer o Fiverr para conectar con potenciales clientes que necesiten servicios relacionados con la implementación, automatización y gestión de infraestructuras de desarrollo y operaciones (DevOps). Este proyecto está en fase inicial y se irá desarrollando y refinando a medida que avance.
