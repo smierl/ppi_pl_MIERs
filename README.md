@@ -1,4 +1,4 @@
-# Código a Producción: Un Viaje con DevOps
+# Código a Producción: un viaje en desarrollo
 
 ## Descripción del Proyecto:
 En este repositorio, estoy desarrollando un modelo de servicios freelance centrado en desarrollo web. La idea es utilizar plataformas como Upwork Freelancer o Fiverr para conectar con potenciales clientes que necesiten servicios relacionados con la construccion de sitios web para pequeñas y medianas empresas. Este proyecto está en fase inicial y se irá desarrollando y refinando a medida que avance.
