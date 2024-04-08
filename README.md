@@ -47,10 +47,10 @@ Inglés: usuario competente (C1)
 
 Si estas interesado en mi trabajo me puedes encontrar por los siguientes medios:
 
-[![LinkedIn](https://e7.pngegg.com/pngimages/602/665/png-clipart-linkedin-linkedin-thumbnail.png)](https://www.linkedin.com/in/santiago-mier-londono-208bb3302/)
-[![Fiverr](https://w7.pngwing.com/pngs/355/428/png-transparent-fiverr-logo-logos-logos-and-brands-icon-thumbnail.png)](https://www.fiverr.com/santiago_m_dev?up_rollout=true)
-[![Upwork](https://w7.pngwing.com/pngs/257/806/png-transparent-upwork-freelancer-android-android-text-trademark-rectangle-thumbnail.png)](https://www.upwork.com/freelancers/~018cc5f41ac4fe1467)
-[![Freelancer](https://w7.pngwing.com/pngs/789/872/png-transparent-freelancer-hd-logo.png)](https://www.freelancer.com/u/SantiagoML22)
+[![LinkedIn](https://e7.pngegg.com/pngimages/602/665/png-clipart-linkedin-linkedin-thumbnail.png)](https://www.linkedin.com/in/santiago-mier-londono-208bb3302/){: width="100px"}
+[![Fiverr](https://w7.pngwing.com/pngs/355/428/png-transparent-fiverr-logo-logos-logos-and-brands-icon-thumbnail.png)](https://www.fiverr.com/santiago_m_dev?up_rollout=true){: width="100px"}
+[![Upwork](https://w7.pngwing.com/pngs/257/806/png-transparent-upwork-freelancer-android-android-text-trademark-rectangle-thumbnail.png)](https://www.upwork.com/freelancers/~018cc5f41ac4fe1467){: width="100px"}
+[![Freelancer](https://w7.pngwing.com/pngs/789/872/png-transparent-freelancer-hd-logo.png)](https://www.freelancer.com/u/SantiagoML22){: width="100px"}
 
 
 
