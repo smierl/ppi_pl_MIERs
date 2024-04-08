@@ -1,7 +1,7 @@
 # Código a Producción: Un Viaje con DevOps
 
 ## Descripción del Proyecto:
-En este repositorio, estoy desarrollando un modelo de servicios freelance centrado en DevOps. La idea es utilizar plataformas como Upwork Freelancer o Fiverr para conectar con potenciales clientes que necesiten servicios relacionados con la implementación, automatización y gestión de infraestructuras de desarrollo y operaciones (DevOps). Este proyecto está en fase inicial y se irá desarrollando y refinando a medida que avance.
+En este repositorio, estoy desarrollando un modelo de servicios freelance centrado en desarrollo web. La idea es utilizar plataformas como Upwork Freelancer o Fiverr para conectar con potenciales clientes que necesiten servicios relacionados con la construccion de sitios web para pequeñas y medianas empresas. Este proyecto está en fase inicial y se irá desarrollando y refinando a medida que avance.
 
 ## Objetivos del Proyecto:
 -Establecer una presencia sólida en plataformas de freelance como Upwork, Freelancer, Fiverr, etc.
@@ -43,14 +43,18 @@ Español: Nativo
 
 Inglés: usuario competente (C1)
 
+## Proyectos:
+
+
 ## Contacto:
 
-Si estas interesado en mi trabajo me puedes encontrar por los siguientes medios:
+Si estas interesado en mi trabajo me puedes encontrarme por los siguientes medios:
 
 [<img src="https://e7.pngegg.com/pngimages/602/665/png-clipart-linkedin-linkedin-thumbnail.png" width="3%">](https://www.linkedin.com/in/santiago-mier-londono-208bb3302/)
 [<img src="https://w7.pngwing.com/pngs/355/428/png-transparent-fiverr-logo-logos-logos-and-brands-icon-thumbnail.png" width="3%">](https://www.fiverr.com/santiago_m_dev?up_rollout=true)
 [<img src="https://w7.pngwing.com/pngs/257/806/png-transparent-upwork-freelancer-android-android-text-trademark-rectangle-thumbnail.png" width="3%">](https://www.upwork.com/freelancers/~018cc5f41ac4fe1467)
 [<img src="https://w7.pngwing.com/pngs/789/872/png-transparent-freelancer-hd-logo.png" width="3%">](https://www.freelancer.com/u/SantiagoML22)
+[![Stack Overflow]("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/768px-Stack_Overflow_icon.svg.png" width="3%")](https://stackoverflow.com/users/24124334/santiago-mier-londono)
 
 
 
