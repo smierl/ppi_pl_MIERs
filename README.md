@@ -43,9 +43,6 @@ Español: Nativo
 
 Inglés: usuario competente (C1)
 
-## Proyectos:
-
-
 ## Contacto:
 
 Si estas interesado en mi trabajo me puedes encontrarme por los siguientes medios:
