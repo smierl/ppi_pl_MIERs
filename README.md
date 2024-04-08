@@ -47,7 +47,7 @@ Inglés: usuario competente (C1)
 
 Si estas interesado en mi trabajo me puedes encontrar por los siguientes medios:
 
-<a src="https://e7.pngegg.com/pngimages/602/665/png-clipart-linkedin-linkedin-thumbnail.png"><img href="https://www.linkedin.com/in/santiago-mier-londono-208bb3302/" width="50"></a>
+<a src="https://e7.pngegg.com/pngimages/602/665/png-clipart-linkedin-linkedin-thumbnail.png"><img href="https://www.linkedin.com/in/santiago-mier-londono-208bb3302/" width="300"></a>
 
 
 
