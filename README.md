@@ -13,7 +13,7 @@ En este repositorio, estoy desarrollando un modelo de servicios freelance centra
 -Construir una cartera de proyectos exitosos y testimonios positivos.
 
 ## Perfil Profesional:
-Estudiante de Ingeniería de Sistemas e Informática en el sexto semestre con una sólida comprensión de los fundamentos teóricos y prácticos de la ingeniería de software y con conocimientos en áreas como programación, bases de datos, redes y sistemas operativos.
+Hola!!!, soy Santiago Mier, Estudiante de Ingeniería de Sistemas e Informática en el sexto semestre con una sólida comprensión de los fundamentos teóricos y prácticos de la ingeniería de software y con conocimientos en áreas como programación, bases de datos, redes y sistemas operativos.
 
 ## Educación:
 
@@ -42,4 +42,16 @@ SCRUM, Agile
 Español: Nativo
 
 Inglés: usuario competente (C1)
+
+## Contacto:
+
+Si estas interesado en mi trabajo me puedes encontrar por los siguientes medios:
+
+[![LinkedIn](C:\Users\santi\OneDrive\Documentos\imagenes ppi\linkedin.jpg)]([url/de/destino](https://www.linkedin.com/in/santiago-mier-londono-208bb3302/))
+[![Fiverr](C:\Users\santi\OneDrive\Documentos\imagenes ppi\fiverr.jpg)]([url/de/destino](https://www.fiverr.com/santiago_m_dev?up_rollout=true))
+[![upwork](C:\Users\santi\OneDrive\Documentos\imagenes ppi\upwork.jpg)]([url/de/destino](https://www.upwork.com/freelancers/~018cc5f41ac4fe1467))
+[![Freelancer](C:\Users\santi\OneDrive\Documentos\imagenes ppi\freelancer.jpg)]([url/de/destin](https://www.freelancer.com/u/SantiagoML22)o)
+
+
+
 
