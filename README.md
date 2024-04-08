@@ -6,7 +6,7 @@ En este repositorio, estoy desarrollando un modelo de servicios freelance centra
 ## Objetivos del Proyecto:
 -Establecer una presencia sólida en plataformas de freelance como Upwork, Freelancer, Fiverr, etc.
 
--Ofrecer servicios de consultoría y desarrollo en el área de DevOps.
+-Ofrecer servicios de consultoría y desarrollo en el área de desarrollo web.
 
 -Colaborar con clientes para implementar soluciones eficientes y escalables.
 
