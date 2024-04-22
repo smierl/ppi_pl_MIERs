@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 500vh;
+    background: linear-gradient(
+    hsl(20, 100%, 60%),             
+    hsl(40, 100%, 60%),              
+    hsl(60, 100%, 60%),
+    hsl(80, 100%, 60%),
+    hsl(100, 100%, 60%),
+    hsl(120, 100%, 60%),
+    hsl(140, 100%, 60%),
+    hsl(160, 100%, 60%),
+    hsl(180, 100%, 60%),
+    hsl(200, 100%, 60%),
+    hsl(220, 100%, 60%),
+    hsl(240, 100%, 60%),
+    hsl(260, 100%, 60%),
+    hsl(280, 100%, 60%),
+    hsl(300, 100%, 60%),
+    hsl(320, 100%, 60%),
+    hsl(340, 100%, 60%),
+    hsl(360, 100%, 60%)
+    );
+}
+
+.infiniteScroll {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate e(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infiniteScroll_icon{
+    color:#fff;
+    font-size: 4em;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
