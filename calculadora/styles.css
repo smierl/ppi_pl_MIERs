@@ -1,68 +1,114 @@
-body{
+/* Estilos del cuerpo (body) de la página */
+body {
+    /* Centra el contenido horizontalmente */
     text-align: center;
+    /* Elimina los márgenes por defecto */
     margin: 0;
+    /* Establece un fondo de color rojo oscuro */
     background: #bf4d5d;
+    /* Aplica un diseño flexible (flexbox) para centrar el contenido vertical y horizontalmente */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* Ajusta la altura del cuerpo al 100% de la altura de la ventana */
     height: 100vh;
 }
 
-#calculator{
+/* Estilos para el contenedor de la calculadora */
+#calculator {
+    /* Ancho fijo de la calculadora */
     width: 200px;
+    /* Fondo de color oscuro */
     background-color: #0d1b2a;
+    /* Bordes redondeados */
     border-radius: 10px;
+    /* Espaciado interno */
     padding: 20px;
+    /* Sombra para darle un efecto de elevación */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
 }
 
-#display{
+/* Estilos para el campo de entrada donde se muestra el resultado */
+#display {
+    /* Ancho completo del contenedor */
     width: 100%;
+    /* Altura del campo de entrada */
     height: 56px;
+    /* Tamaño del texto dentro del campo */
     font-size: 20px;
+    /* Alinea el texto a la derecha */
     text-align: right;
+    /* Margen a la izquierda */
     margin-left: 10px;
+    /* Espaciado interno */
     padding: 20px;
+    /* Bordes redondeados */
     border-radius: 5px;
+    /* Color del texto */
     color: #e0e1dd;
+    /* Fondo transparente con un color oscuro */
     background-color: rgba(13, 27, 42, 0.3);
+    /* Elimina los bordes */
     border: none;
+    /* Asegura que el espaciado interno no afecte el tamaño del campo */
     box-sizing: border-box;
 }
 
-.operator{
+/* Estilos generales para los botones de operadores (+, -, *, /, .) */
+.operator {
+    /* Color azul claro para los operadores */
     color: #219ebc;
 }
 
-#ac{
+/* Estilos específicos para el botón AC (All Clear) */
+#ac {
+    /* Color rojo para el botón AC */
     color: #bf4d5d;
 }
 
-.equal{
+/* Estilos específicos para el botón "=" (botón de igual) */
+.equal {
+    /* Hace que el botón de igual ocupe el 50% del ancho, menos 10px */
     width: calc(50% - 10px);
 }
 
-button{
+/* Estilos generales para todos los botones */
+button {
+    /* Hace que cada botón ocupe el 25% del ancho, menos 10px */
     width: calc(25% - 10px);
+    /* Altura fija de los botones */
     height: 50px;
+    /* Tamaño de la fuente dentro de los botones */
     font-size: 20px;
+    /* Espaciado entre los botones */
     margin: 10px 5px;
+    /* Elimina los bordes */
     border: none;
+    /* Bordes redondeados */
     border-radius: 5px;
+    /* Alineación de los botones en fila */
     float: left;
+    /* Fondo oscuro para los botones */
     background-color: rgb(13, 27, 42);
+    /* Color claro del texto */
     color: #e0e1dd;
+    /* Sombra para darle un efecto de elevación */
     -webkit-box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
     -moz-box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
     box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
 }
 
-button:hover{
+/* Efecto al pasar el mouse sobre los botones */
+button:hover {
+    /* Cambia el cursor al estilo "puntero" cuando el usuario pasa el mouse por encima */
     cursor: pointer;
 }
 
-button:active{
+/* Efecto al hacer clic en un botón */
+button:active {
+    /* Escala el botón ligeramente cuando es presionado */
     transform: scale(1.05);
+    /* Sombra adicional para simular un botón presionado */
     box-shadow: 0 24px 4px 1px rgba(0, 0, 0, 0.19),
     0 1.5px rgba(0, 0, 0, 0.23);
 }
