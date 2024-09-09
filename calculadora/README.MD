@@ -14,6 +14,7 @@ Esta es una **aplicación de calculadora web** simple desarrollada utilizando **
 - **HTML:** Estructura básica de la página y elementos de la calculadora.
 - **CSS:** Estilos para una apariencia atractiva y una disposición clara.
 - **JavaScript:** Lógica de la calculadora para manejar operaciones y entradas del usuario.
+
 [LINK para el proyecto](https://calculadoraxd22.netlify.app)
 
 
