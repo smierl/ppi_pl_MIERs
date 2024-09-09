@@ -1,0 +1,395 @@
+<html>
+<head>
+    <title>Panel de ventas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #e0f7fa;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            padding-top: 20px;
+            border-radius: 0 20px 20px 0;
+        }
+        .sidebar h2 {
+            text-align: center;
+            color: #ff6b6b;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px 20px;
+            color: #333;
+            cursor: pointer;
+            border-radius: 20px;
+            margin: 5px 10px;
+        }
+        .sidebar ul li:hover {
+            background-color: #f1f1f1;
+        }
+        .sidebar ul li i {
+            margin-right: 10px;
+        }
+        .sidebar ul li.logout {
+            color: #e74c3c;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 20px;
+        }
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .header .search-bar input {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .header .search-bar button {
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .header .notifications {
+            display: flex;
+            align-items: center;
+        }
+        .header .notifications i {
+            font-size: 20px;
+            margin-right: 20px;
+            position: relative;
+        }
+        .header .notifications i .badge {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background-color: #e74c3c;
+            color: #fff;
+            border-radius: 50%;
+            padding: 2px 5px;
+            font-size: 12px;
+        }
+        .header .toggle-switch {
+            display: flex;
+            align-items: center;
+        }
+        .header .toggle-switch input {
+            display: none;
+        }
+        .header .toggle-switch label {
+            background-color: #ddd;
+            width: 40px;
+            height: 20px;
+            border-radius: 20px;
+            position: relative;
+            cursor: pointer;
+        }
+        .header .toggle-switch label::after {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            transition: 0.3s;
+        }
+        .header .toggle-switch input:checked + label {
+            background-color: #ff6b6b;
+        }
+        .header .toggle-switch input:checked + label::after {
+            left: 21px;
+        }
+        .panel {
+            margin-top: 20px;
+        }
+        .panel h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .panel .breadcrumb {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+        .panel .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .panel .stats .stat {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .panel .stats .stat:last-child {
+            margin-right: 0;
+        }
+        .panel .stats .stat i {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+        .panel .stats .stat .info {
+            text-align: right;
+        }
+        .panel .stats .stat .info h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .panel .stats .stat .info p {
+            margin: 0;
+            color: #999;
+        }
+        .panel .recent-orders, .panel .todos {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .panel .recent-orders h2, .panel .todos h2 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .panel .recent-orders table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .panel .recent-orders table th, .panel .recent-orders table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .panel .recent-orders table th {
+            background-color: #f9f9f9;
+        }
+        .panel .recent-orders table td.status {
+            text-align: center;
+        }
+        .panel .recent-orders table td.status span {
+            padding: 5px 10px;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 12px;
+        }
+        .panel .recent-orders table td.status span.Completado {
+            background-color: #28a745;
+        }
+        .panel .recent-orders table td.status span.pending {
+            background-color: #ffc107;
+        }
+        .panel .recent-orders table td.status span.process {
+            background-color: #17a2b8;
+        }
+        .panel .todos ul {
+            list-style: none;
+            padding: 0;
+        }
+        .panel .todos ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .panel .todos ul li:last-child {
+            border-bottom: none;
+        }
+        .panel .todos ul li .todo-info {
+            display: flex;
+            align-items: center;
+        }
+        .panel .todos ul li .todo-info i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .panel .todos ul li .todo-info p {
+            margin: 0;
+        }
+        .panel .todos ul li .actions i {
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra lateral izquierda con opciones de menú -->
+    <div class="sidebar">
+        <h2>organizador</h2>
+        <ul>
+            <li><i class="fas fa-th-large"></i> panel</li>
+            <li><i class="fas fa-store"></i> Mi tienda</li>
+            <li><i class="fas fa-chart-line"></i> Analitica</li>
+            <li><i class="fas fa-envelope"></i> Mensaje</li>
+            <li><i class="fas fa-users"></i> Equipo</li>
+            <li><i class="fas fa-cog"></i> Configuracion</li>
+            <li class="logout"><i class="fas fa-sign-out-alt"></i> Logout</li>
+        </ul>
+    </div>
+
+    <!-- Contenido principal, incluye encabezado y estadísticas -->
+    <div class="main-content">
+        <!-- Encabezado con barra de búsqueda, notificaciones e interruptor -->
+        <div class="header">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="notifications">
+                <i class="fas fa-bell"><span class="badge">8</span></i>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="toggle">
+                    <label for="toggle"></label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel principal con estadísticas y órdenes recientes -->
+        <div class="panel">
+            <h1>panel</h1>
+            <div class="breadcrumb">
+                panel > Inicio
+            </div>
+
+            <!-- Sección de estadísticas -->
+            <div class="stats">
+                <div class="stat">
+                    <i class="fas fa-calendar-check" style="color: #ff6b6b;"></i>
+                    <div class="info">
+                        <h3>1020</h3>
+                        <p>Nueva orden</p>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-user" style="color: #ffc107;"></i>
+                    <div class="info">
+                        <h3>2834</h3>
+                        <p>Visitantes</p>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-dollar-sign" style="color: #ff6b6b;"></i>
+                    <div class="info">
+                        <h3>$2543</h3>
+                        <p>Ventas totales</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabla de órdenes recientes -->
+            <div class="recent-orders">
+                <h2>Ordenes rescientes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Fecha de la orden</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>pepito perez</td>
+                            <td>01-10-2021</td>
+                            <td class="status"><span class="Completado">Completado</span></td>
+                        </tr>
+                        <tr>
+                            <td>pepito perez</td>
+                            <td>01-10-2021</td>
+                            <td class="status"><span class="pending">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td>pepito perez</td>
+                            <td>01-10-2021</td>
+                            <td class="status"><span class="process">En proceso</span></td>
+                        </tr>
+                        <tr>
+                            <td>pepito perez</td>
+                            <td>01-10-2021</td>
+                            <td class="status"><span class="pending">Pendiente</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Lista de tareas pendientes (To-dos) -->
+            <div class="todos"> 
+                <h2>Todos</h2>
+                <ul>
+                    <li>
+                        <div class="todo-info">
+                            <i class="fas fa-tasks" style="color: #ff6b6b;"></i>
+                            <p>Lista</p>
+                        </div>
+                        <div class="actions">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="todo-info">
+                            <i class="fas fa-tasks" style="color: #ff6b6b;"></i>
+                            <p>Lista</p>
+                        </div>
+                        <div class="actions">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="todo-info">
+                            <i class="fas fa-tasks" style="color: #ff6b6b;"></i>
+                            <p>Lista</p>
+                        </div>
+                        <div class="actions">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="todo-info">
+                            <i class="fas fa-tasks" style="color: #ff6b6b;"></i>
+                            <p>Lista</p>
+                        </div>
+                        <div class="actions">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
