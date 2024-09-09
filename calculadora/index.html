@@ -5,37 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
 
+    <!-- Vincula un archivo CSS externo llamado "styles.css" para los estilos de la página -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Div que contiene la calculadora -->
     <div id="calculator">
+        <!-- Campo de entrada para mostrar el resultado de las operaciones, deshabilitado para evitar escritura directa -->
         <input type="text" id="display" disabled>
         <br />
+        <!-- Botón para borrar todo (AC), es un operador -->
         <button id="ac" class="operator">AC</button>
+        <!-- Botón para eliminar el último dígito (DE), es un operador -->
         <button id="de" class="operator">DE</button>
+        <!-- Botón para agregar un punto decimal, es un operador -->
         <button id="." class="operator">.</button>
+        <!-- Botón para la división, es un operador -->
         <button id="/" class="operator">/</button>
         <br />
+        <!-- Botones numéricos (7, 8, 9), utilizados para ingresar números en la calculadora -->
         <button id="7">7</button>
         <button id="8">8</button>
         <button id="9">9</button>
+        <!-- Botón para la multiplicación, es un operador -->
         <button id="*" class="operator">*</button>
         <br />
+        <!-- Botones numéricos (4, 5, 6) -->
         <button id="4">4</button>
         <button id="5">5</button>
         <button id="6">6</button>
+        <!-- Botón para la resta, es un operador -->
         <button id="-" class="operator">-</button>
         <br />
+        <!-- Botones numéricos (1, 2, 3) -->
         <button id="1">1</button>
         <button id="2">2</button>
         <button id="3">3</button>
+        <!-- Botón para la suma, es un operador -->
         <button id="+" class="operator">+</button>
         <br />
+        <!-- Botones numéricos (00 y 0) -->
         <button id="00">00</button>
         <button id="0">0</button>
+        <!-- Botón para calcular el resultado de la operación, es el botón de igual -->
         <button id="=" class="equal operator">=</button>
     </div>
 
+    <!-- Vincula un archivo JavaScript externo llamado "scripts.js" para controlar el comportamiento de la calculadora -->
     <script src="scripts.js"></script>
 </body>
 </html>
+
