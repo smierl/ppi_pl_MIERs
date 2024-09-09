@@ -1,68 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Pokedex</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<header class="container">
-			<a href="/" class="logo">
-				<img src="img/Pokédex_logo.png" alt="Logo Pokedex" />
-			</a>
-			<form>
-				<div class="form-group">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="icon-search"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-						/>
-					</svg>
-					<input
-						type="search"
-						placeholder="Buscar nombre de Pokemon"
-					/>
-				</div>
+<head>
+    <!-- Define el tipo de documento como HTML5 -->
+    <meta charset="UTF-8" />
+    <!-- Establece la codificación de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Asegura la compatibilidad con la versión más reciente del motor de renderizado de IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configura el viewport para que la página se ajuste correctamente al ancho de la pantalla en dispositivos móviles -->
+    <title>Pokedex</title>
+    <!-- Define el título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Vincula el archivo CSS externo para los estilos de la página -->
+</head>
+<body>
+    <!-- Contenido visible de la página -->
 
-				<button class="btn-search">Buscar</button>
-			</form>
-		</header>
+    <header class="container">
+        <!-- Encabezado de la página con el logo y el formulario de búsqueda -->
+        <a href="/" class="logo">
+            <!-- Enlace al inicio de la página con el logo de la Pokédex -->
+            <img src="img/Pokédex_logo.png" alt="Logo Pokedex" />
+            <!-- Imagen del logo de la Pokédex -->
+        </a>
+        <form>
+            <!-- Formulario de búsqueda -->
+            <div class="form-group">
+                <!-- Agrupa el ícono de búsqueda y el campo de entrada -->
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-search"
+                >
+                    <!-- Ícono de búsqueda -->
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                </svg>
+                <input
+                    type="search"
+                    placeholder="Buscar nombre de Pokemon"
+                />
+                <!-- Campo de entrada para buscar Pokémon -->
+            </div>
+            <button class="btn-search">Buscar</button>
+            <!-- Botón para realizar la búsqueda -->
+        </form>
+    </header>
 
-		<div class="container-filter container">
-			<div class="icon-filter">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					class="icon"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
-					/>
-				</svg>
-                <span>Filtrar</span>
-			</div>
-		</div>
+    <div class="container-filter container">
+        <!-- Contiene el filtro con un ícono de filtro -->
+        <div class="icon-filter">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+            >
+                <!-- Ícono de filtro -->
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+                />
+            </svg>
+            <span>Filtrar</span>
+            <!-- Texto para el filtro -->
+        </div>
+    </div>
 
-		<main class="card-list-pokemon container">
-			<a href="pokemon.html" class="card-pokemon">
+    <main class="card-list-pokemon container">
+        <!-- Contiene una lista de tarjetas de Pokémon -->
+        <!-- Cada tarjeta incluye una imagen, un ID, un nombre y tipos de Pokémon -->
+
+        <a href="pokemon.html" class="card-pokemon">
 				<div class="card-img">
 					<img
 						src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
@@ -257,14 +275,35 @@
 						<span class="flying">Volador</span>
 					</div>
 				</div>
-			</a>
-		</main>
 
-		<div class="container-filters">
-			<div class="filter-by-type">
-				<span>Tipo</span>
+        <a href="pokemon.html" class="card-pokemon">
+            <div class="card-img">
+                <img
+                    src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png"
+                    alt="pokemon ivysaur"
+                />
+            </div>
+            <div class="card-info">
+                <span class="pokemon-id">N° 2</span>
+                <h3>Ivysaur</h3>
+                <div class="card-types">
+                    <span class="grass">Planta</span>
+                    <span class="poison">Veneno</span>
+                </div>
+            </div>
+        </a>
 
-				<div class="group-type">
+        <!-- Añadir más tarjetas de Pokémon aquí -->
+
+    </main>
+
+    <div class="container-filters">
+        <!-- Contiene los filtros para seleccionar diferentes tipos de Pokémon -->
+        <div class="filter-by-type">
+            <span>Tipo</span>
+            <!-- Agrupa los filtros por tipo de Pokémon -->
+
+            <div class="group-type">
 					<input type="checkbox" name="grass" id="grass" />
 					<label for="grass">Planta</label>
 				</div>
@@ -336,9 +375,11 @@
 					<input type="checkbox" name="water" id="water" />
 					<label for="water">Agua</label>
 				</div>
-			</div>
-		</div>
 
-        <script src="main.js"></script>
-	</body>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <!-- Vincula un archivo JavaScript externo para la funcionalidad adicional -->
+</body>
 </html>
