@@ -15,3 +15,5 @@
 
 - **HTML:** Estructura de la página y elementos del dashboard.
 - **CSS:** Estilos y diseño para una apariencia moderna y funcional.
+
+  [LINK para el proyecto](https://panel22xd.netlify.app)
