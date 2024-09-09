@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Esta es una **aplicación de calculadora web** simple desarrollada utilizando **HTML**, **CSS** y **JavaScript**. La calculadora permite realizar operaciones básicas como suma, resta, multiplicación y división. Su interfaz es amigable y está diseñada para ser intuitiva tanto en dispositivos de escritorio como móviles.
+Esta es una **aplicación de calculadora web** simple desarrollada utilizando **HTML**, **CSS** y **JavaScript**. La calculadora permite realizar operaciones básicas como suma, resta, multiplicación y división. Su interfaz es amigable y está diseñada para ser intuitiva en dispositivos de escritorio.
 
 ## Características
 
@@ -14,3 +14,5 @@ Esta es una **aplicación de calculadora web** simple desarrollada utilizando **
 - **HTML:** Estructura básica de la página y elementos de la calculadora.
 - **CSS:** Estilos para una apariencia atractiva y una disposición clara.
 - **JavaScript:** Lógica de la calculadora para manejar operaciones y entradas del usuario.
+
+
