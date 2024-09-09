@@ -1,18 +1,18 @@
-# Pokédex Web
+# Lista de Tareas Web
 
 ## Descripción
 
-**Pokédex Web** es una aplicación de Pokédex desarrollada utilizando **HTML**, **CSS** y **JavaScript**. Esta aplicación permite a los usuarios explorar información detallada sobre Pokémon, incluyendo nombres, tipos, estadísticas y habilidades. La interfaz es intuitiva y está diseñada para ofrecer una experiencia de usuario agradable y eficiente.
+**Lista de Tareas Web** es una aplicación de lista de tareas simple desarrollada utilizando **HTML**, **CSS** y **JavaScript**. Esta aplicación permite a los usuarios gestionar y organizar sus tareas diarias de manera efectiva, proporcionando una interfaz intuitiva para agregar, editar y eliminar tareas.
 
 ## Características
 
-- **Exploración de Pokémon:** Busca y visualiza información sobre Pokémon.
-- **Detalles Completos:** Muestra nombres, tipos, estadísticas, habilidades y más.
-- **Interfaz Amigable:** Diseño limpio y fácil de usar con opciones de filtrado y búsqueda.
-- **Datos Dinámicos:** Usa JavaScript para actualizar la información del Pokédex en tiempo real.
+- **Gestión de Tareas:** Agrega, edita y elimina tareas fácilmente.
+- **Interfaz Intuitiva:** Diseño limpio y fácil de usar para una experiencia fluida.
+- **Tareas Completadas:** Marca las tareas como completadas para llevar un registro de lo que has hecho.
+- **Responsiva:** Se adapta a diferentes tamaños de pantalla y dispositivos.
 
 ## Tecnologías Utilizadas
 
-- **HTML:** Estructura de la página y elementos del Pokédex.
-- **CSS:** Estilos para una presentación atractiva y responsiva.
-- **JavaScript:** Funcionalidades interactivas, manejo de eventos y manipulación del DOM.
+- **HTML:** Estructura de la página y elementos de la lista de tareas.
+- **CSS:** Estilos para una presentación atractiva y funcional.
+- **JavaScript:** Lógica para manejar las interacciones del usuario y la gestión de tareas.
