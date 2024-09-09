@@ -26,9 +26,9 @@ Cursando el sexto semestre.
 ### Lenguajes de Programación: 
 Java, Python, C++
 ### Desarrollo Web:
-HTML, CSS, JavaScript
+HTML, CSS, JavaScript, django
 ### Bases de Datos: 
-SQL, MongoDB
+SQL, MongoDB,postgreSQL
 ### Herramientas de Desarrollo:
 Git, Visual Studio Code
 ### Sistemas Operativos: 
