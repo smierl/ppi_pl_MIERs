@@ -16,3 +16,6 @@
 - **HTML:** Estructura básica de la página y elementos necesarios para el scroll.
 - **CSS:** Estilos para el diseño y la animación de colores.
 - **JavaScript:** Lógica para la transición y el scroll infinito de colores.
+
+  [LINK para el proyecto](https://infinito22.netlify.app)
+
