@@ -1,79 +1,83 @@
+/* Importa la fuente Montserrat desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
-:root{
+/* Definición de variables CSS para los colores usados en el diseño */
+:root {
     --color-fire: #ff7402;
-	--color-grass: #9bcc50;
-	--color-steel: #9eb7b8;
-	--color-water: #4592c4;
-	--color-psychic: #f366b9;
-	--color-ground: #ab9842;
-	--color-ice: #51c4e7;
-	--color-flying: #3dc7ef;
-	--color-ghost: #4d5b64;
-	--color-normal: #a4acaf;
-	--color-poison: #7e0058;
-	--color-rock: #a38c21;
-	--color-fighting: #d56723;
-	--color-dark: #707070;
-	--color-bug: #729f3f;
-	--color-dragon: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
-	--color-electric: #bba909;
-	--color-fairy: #fdb9e9;
-	--color-shadow: #7b62a3;
-	--color-unknow: #757575;
+    --color-grass: #9bcc50;
+    --color-steel: #9eb7b8;
+    --color-water: #4592c4;
+    --color-psychic: #f366b9;
+    --color-ground: #ab9842;
+    --color-ice: #51c4e7;
+    --color-flying: #3dc7ef;
+    --color-ghost: #4d5b64;
+    --color-normal: #a4acaf;
+    --color-poison: #7e0058;
+    --color-rock: #a38c21;
+    --color-fighting: #d56723;
+    --color-dark: #707070;
+    --color-bug: #729f3f;
+    --color-dragon: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    --color-electric: #bba909;
+    --color-fairy: #fdb9e9;
+    --color-shadow: #7b62a3;
+    --color-unknow: #757575;
 
-	--color-primary: #006d77;
-	--color-primary-hover: #83c5be;
+    --color-primary: #006d77;
+    --color-primary-hover: #83c5be;
 }
 
-*{
+/* Reseteo de márgenes, rellenos y box-sizing para todos los elementos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Montserrat';
+/* Estilo global para el cuerpo de la página */
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Globales */
-.container{
+/* Estilo general para los contenedores */
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* header */
-
-header{
+/* Estilo para el encabezado */
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 40px 0;
 }
 
-.logo img{
+/* Estilo para el logo dentro del encabezado */
+.logo img {
     width: 150px;
 }
 
-header form{
+/* Estilo para el formulario dentro del encabezado */
+header form {
     display: flex;
     align-items: center;
-
     gap: 15px;
 }
 
-.form-group{
+/* Estilo para el grupo de búsqueda */
+.form-group {
     display: flex;
     align-items: center;
     gap: 10px;
-
     border: 1px solid #555;
     padding: 15px 20px;
     border-radius: 25px;
 }
 
-.form-group input{
+/* Estilo para el campo de entrada dentro del grupo de búsqueda */
+.form-group input {
     font-family: inherit;
     width: 300px;
     border: none;
@@ -81,14 +85,15 @@ header form{
     font-size: 15px;
 }
 
-
-.icon-search{
+/* Estilo para el icono de búsqueda */
+.icon-search {
     width: 20px;
     height: 20px;
     stroke: #555;
 }
 
-.btn-search{
+/* Estilo para el botón de búsqueda */
+.btn-search {
     border: none;
     outline: none;
     border-radius: 25px;
@@ -100,46 +105,49 @@ header form{
     color: #fff;
 }
 
-.btn-search:hover{
+/* Estilo para el botón de búsqueda cuando está en estado hover */
+.btn-search:hover {
     background-color: var(--color-primary-hover);
     color: #000;
 }
 
-/* Btn Filter */
-.container-filter{
+/* Estilo para el contenedor del filtro */
+.container-filter {
     display: flex;
 }
 
-.icon-filter{
+/* Estilo para el icono del filtro */
+.icon-filter {
     display: flex;
     align-items: center;
     gap: 15px;
-
     margin-bottom: 20px;
     cursor: pointer;
 }
 
-.icon-filter .icon{
+/* Estilo para el icono dentro del icono de filtro */
+.icon-filter .icon {
     width: 30px;
     height: 30px;
     stroke: #555;
 }
 
-/* Card List Pokemon */
-.card-list-pokemon{
+/* Estilo para la lista de tarjetas de Pokémon */
+.card-list-pokemon {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
+/* Estilo para las tarjetas individuales de Pokémon */
 .card-pokemon {
     cursor: pointer;
     text-decoration: none;
 }
 
-.card-img{
+/* Estilo para la imagen dentro de la tarjeta de Pokémon */
+.card-img {
     background-color: #f2f2f2;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,250 +155,213 @@ header form{
     height: 250px;
 }
 
-.card-img img{
+/* Estilo para la imagen del Pokémon dentro de la tarjeta */
+.card-img img {
     width: 100%;
     height: 100%;
 }
 
-.card-info{
+/* Estilo para la información dentro de la tarjeta de Pokémon */
+.card-info {
     padding: 15px;
 }
 
-.card-info h3{
+/* Estilo para el título dentro de la tarjeta de Pokémon */
+.card-info h3 {
     color: #333;
 }
 
-.pokemon-id{
+/* Estilo para el identificador del Pokémon */
+.pokemon-id {
     display: block;
     color: #888;
     margin-bottom: 15px;
 }
 
-.card-types{
+/* Estilo para los tipos de Pokémon dentro de la tarjeta */
+.card-types {
     display: flex;
     gap: 10px;
     margin-top: 10px;
 }
 
-.card-types span{
+/* Estilo para los elementos de tipo de Pokémon */
+.card-types span {
     font-size: 12px;
     padding: 5px 20px;
     border-radius: 5px;
     color: #fff;
 }
 
-/* Types of Pokemon */
-.water {
-	background-color: var(--color-water);
-}
+/* Estilo para los diferentes tipos de Pokémon */
+.water { background-color: var(--color-water); }
+.grass { background-color: var(--color-grass); }
+.poison { background-color: var(--color-poison); }
+.fire { background-color: var(--color-fire); }
+.bug { background-color: var(--color-bug); }
+.dragon { background: var(--color-dragon); }
+.flying { background-color: var(--color-flying); }
+.ground { background-color: var(--color-ground); }
+.steel { background-color: var(--color-steel); }
+.psychic { background-color: var(--color-psychic); }
+.ice { background-color: var(--color-ice); }
+.ghost { background-color: var(--color-ghost); }
+.normal { background-color: var(--color-normal); }
+.rock { background-color: var(--color-rock); }
+.electric { background-color: var(--color-electric); }
+.fighting { background-color: var(--color-fighting); }
+.fairy { background-color: var(--color-fairy); }
+.dark { background-color: var(--color-dark); }
 
-.grass {
-	background-color: var(--color-grass);
-}
-
-.poison {
-	background-color: var(--color-poison);
-}
-
-.fire {
-	background-color: var(--color-fire);
-}
-
-.bug {
-	background-color: var(--color-bug);
-}
-
-.dragon {
-	background: var(--color-dragon);
-}
-
-.flying {
-	background-color: var(--color-flying);
-}
-
-.ground {
-	background-color: var(--color-ground);
-}
-
-.steel {
-	background-color: var(--color-steel);
-}
-
-.psychic {
-	background-color: var(--color-psychic);
-}
-
-.ice {
-	background-color: var(--color-ice);
-}
-
-.ghost {
-	background-color: var(--color-ghost);
-}
-
-.normal {
-	background-color: var(--color-normal);
-}
-
-.rock {
-	background-color: var(--color-rock);
-}
-
-.electric {
-	background-color: var(--color-electric);
-}
-
-.fighting {
-	background-color: var(--color-fighting);
-}
-
-.fairy {
-	background-color: var(--color-fairy);
-}
-
-.dark {
-	background-color: var(--color-dark);
-}
-
-/* Container Filters */
-.container-filters{
+/* Estilo para el contenedor de filtros */
+.container-filters {
     display: flex;
     justify-content: center;
-
     position: fixed;
     top: 0;
     left: -300px;
     width: 250px;
-
     color: #555;
     background-color: #f2f2f2;
     height: 100%;
     padding-top: 140px;
     transition: all .3s linear;
-
 }
 
-.container-filters.active{
+/* Estilo para el contenedor de filtros cuando está activo */
+.container-filters.active {
     left: 0;
 }
 
-.filter-by-type{
+/* Estilo para los filtros por tipo */
+.filter-by-type {
     display: flex;
     flex-direction: column;
-
     gap: 20px;
 }
 
-.filter-by-type span{
+/* Estilo para los títulos de los filtros por tipo */
+.filter-by-type span {
     font-weight: 700;
     font-size: 22px;
 }
 
-.group-type{
+/* Estilo para el grupo de tipos dentro de los filtros */
+.group-type {
     display: flex;
     gap: 10px;
-
-    margin-left: 15px ;
+    margin-left: 15px;
 }
 
-.group-type label{
+/* Estilo para las etiquetas dentro del grupo de tipos */
+.group-type label {
     cursor: pointer;
 }
 
-/* 
-======================================= 
-Styles of Pokemon Single Page
-======================================= 
+/* ========================== 
+   Estilos para la página del Pokémon
+   ========================== 
 */
 
-.main-pokemon{
+/* Estilo para la sección principal del Pokémon */
+.main-pokemon {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
 }
 
-.header-main-pokemon{
+/* Estilo para el encabezado de la sección principal del Pokémon */
+.header-main-pokemon {
     margin-top: 20px;
-
     display: flex;
     align-items: center;
-
     position: relative;
 }
 
-.number-pokemon{
+/* Estilo para el número del Pokémon en la sección principal */
+.number-pokemon {
     position: absolute;
     top: -70px;
     left: 0;
-
     font-size: 300px;
     font-weight: 700;
     color: var(--color-primary-hover);
 }
 
-.container-img-pokemon{
+/* Estilo para el contenedor de la imagen del Pokémon */
+.container-img-pokemon {
     order: 2;
     flex: 1;
     padding: 25px 25px 25px 0;
 }
 
-.container-img-pokemon img{
+/* Estilo para la imagen del Pokémon dentro del contenedor */
+.container-img-pokemon img {
     width: 100%;
 }
 
-.container-info-pokemon{
+/* Estilo para el contenedor de información del Pokémon */
+.container-info-pokemon {
     display: flex;
     flex-direction: column;
-
     order: 1;
     flex: 1;
 }
 
-.container-info-pokemon h1{
+/* Estilo para el nombre del Pokémon en la sección principal */
+.container-info-pokemon h1 {
     text-align: right;
     font-size: 50px;
-
-
 }
 
-.info-pokemon{
+/* Estilo para la información adicional del Pokémon (altura y peso) */
+.info-pokemon {
     display: flex;
     justify-content: space-between;
-
     margin-top: 20px;
 }
 
-.group-info p{
+/* Estilo para los elementos de información adicional (altura y peso) */
+.group-info p {
     font-weight: 700;
 }
 
-/* Stats */
-.container-stats{
+/* ========================== 
+   Estilos para las estadísticas del Pokémon
+   ========================== 
+*/
+
+/* Estilo para el contenedor de las estadísticas del Pokémon */
+.container-stats {
     display: flex;
     gap: 50px;
     align-items: center;
 }
 
-.stats{
+/* Estilo para la sección de estadísticas */
+.stats {
     display: flex;
     flex-direction: column;
     gap: 20px;
     flex: 1;
 }
 
-.stat-group{
+/* Estilo para cada grupo de estadísticas */
+.stat-group {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.stat-group span{
+/* Estilo para el nombre de la estadística en el grupo de estadísticas */
+.stat-group span {
     flex: 20%;
     font-weight: 500;
     font-size: 18px;
 }
 
-.progress-bar{
+/* Estilo para la barra de progreso dentro de las estadísticas */
+.progress-bar {
     width: 100%;
     height: 30px;
     background-color: var(--color-primary);
