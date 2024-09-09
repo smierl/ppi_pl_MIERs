@@ -16,3 +16,5 @@
 - **HTML:** Estructura de la página y elementos de la lista de tareas.
 - **CSS:** Estilos para una presentación atractiva y funcional.
 - **JavaScript:** Lógica para manejar las interacciones del usuario y la gestión de tareas.
+
+  [LINK para el proyecto](https://listadecosas22.netlify.app)
