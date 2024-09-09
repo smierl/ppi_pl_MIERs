@@ -1,7 +1,11 @@
-const btnFilter = document.querySelector('.icon-filter')
+// Selecciona el elemento con la clase 'icon-filter'
+const btnFilter = document.querySelector('.icon-filter');
 
+// Añade un escuchador de eventos al botón 'icon-filter' para detectar clics
 btnFilter.addEventListener('click', () => {
-    const containerFilter = document.querySelector('.container-filters')
+    // Selecciona el contenedor de filtros usando la clase 'container-filters'
+    const containerFilter = document.querySelector('.container-filters');
 
-    containerFilter.classList.toggle('active')
-})
+    // Alterna la clase 'active' en el contenedor de filtros
+    containerFilter.classList.toggle('active');
+});
