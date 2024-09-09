@@ -1,47 +1,66 @@
-*{
+/* Estilos globales para todos los elementos */
+* {
+    /* Elimina los márgenes por defecto de todos los elementos */
     margin: 0;
+    /* Elimina el espaciado interno por defecto de todos los elementos */
     padding: 0;
+    /* Ajusta el modelo de caja para que el tamaño del elemento incluya el relleno y el borde */
     box-sizing: border-box;
 }
 
-body{
+/* Estilos para el elemento body */
+body {
+    /* Establece una altura mínima del 500% del viewport para permitir el desplazamiento */
     min-height: 500vh;
+    /* Aplica un degradado lineal como fondo, que cambia suavemente de un color a otro en el espectro HSL */
     background: linear-gradient(
-    hsl(20, 100%, 60%),             
-    hsl(40, 100%, 60%),              
-    hsl(60, 100%, 60%),
-    hsl(80, 100%, 60%),
-    hsl(100, 100%, 60%),
-    hsl(120, 100%, 60%),
-    hsl(140, 100%, 60%),
-    hsl(160, 100%, 60%),
-    hsl(180, 100%, 60%),
-    hsl(200, 100%, 60%),
-    hsl(220, 100%, 60%),
-    hsl(240, 100%, 60%),
-    hsl(260, 100%, 60%),
-    hsl(280, 100%, 60%),
-    hsl(300, 100%, 60%),
-    hsl(320, 100%, 60%),
-    hsl(340, 100%, 60%),
-    hsl(360, 100%, 60%)
+        hsl(20, 100%, 60%),             
+        hsl(40, 100%, 60%),              
+        hsl(60, 100%, 60%),
+        hsl(80, 100%, 60%),
+        hsl(100, 100%, 60%),
+        hsl(120, 100%, 60%),
+        hsl(140, 100%, 60%),
+        hsl(160, 100%, 60%),
+        hsl(180, 100%, 60%),
+        hsl(200, 100%, 60%),
+        hsl(220, 100%, 60%),
+        hsl(240, 100%, 60%),
+        hsl(260, 100%, 60%),
+        hsl(280, 100%, 60%),
+        hsl(300, 100%, 60%),
+        hsl(320, 100%, 60%),
+        hsl(340, 100%, 60%),
+        hsl(360, 100%, 60%)
     );
 }
 
+/* Estilos para el contenedor principal con la clase 'infiniteScroll' */
 .infiniteScroll {
+    /* Fija la posición del contenedor en el viewport */
     position: fixed;
+    /* Centra el contenedor verticalmente */
     top: 50%;
+    /* Centra el contenedor horizontalmente */
     left: 50%;
-    transform: translate e(-50%, -50%);
+    /* Ajusta la posición para que esté exactamente en el centro del viewport */
+    transform: translate(-50%, -50%);
+    /* Usa flexbox para centrar el contenido dentro del contenedor */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.infiniteScroll_icon{
-    color:#fff;
+/* Estilos para el icono dentro del contenedor 'infiniteScroll' */
+.infiniteScroll_icon {
+    /* Establece el color del icono como blanco */
+    color: #fff;
+    /* Define el tamaño del icono */
     font-size: 4em;
+    /* Agrega relleno alrededor del icono */
     padding: 30px;
+    /* Establece un fondo semitransparente negro */
     background: rgba(0, 0, 0, 0.3);
+    /* Redondea las esquinas del fondo para que el icono tenga una forma circular */
     border-radius: 50%;
 }
