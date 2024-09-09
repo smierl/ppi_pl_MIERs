@@ -16,3 +16,5 @@
 - **HTML:** Estructura de la página y elementos del Pokédex.
 - **CSS:** Estilos para una presentación atractiva y responsiva.
 - **JavaScript:** Funcionalidades interactivas, manejo de eventos y manipulación del DOM.
+
+  [LINK para el proyecto](https://pokedexweb2.netlify.app)
