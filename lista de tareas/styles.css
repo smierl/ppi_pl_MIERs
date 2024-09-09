@@ -1,113 +1,181 @@
+/* Variables globales (Custom Properties) */
 :root {
+    /* Color primario utilizado para elementos principales */
     --primary: #A5C882;
+    /* Color secundario utilizado para elementos destacados o botones */
     --secondary: #D33F49;
+    /* Color de fondo claro */
     --light: #fff;
+    /* Color de texto oscuro */
     --dark: #000;
+    /* Color utilizado para elementos deshabilitados o fondos */
     --diabled: #e7e7e7;
 }
 
+/* Estilos globales para el cuerpo de la página */
 body {
+    /* Fuente de la página */
     font-family: 'Lato', sans-serif;
+    /* Elimina los márgenes por defecto */
     margin: 0;
+    /* Altura de la página al 100% de la ventana del navegador */
     height: 100vh;
+    /* Color de fondo del cuerpo */
     background-color: var(--diabled);
 }
 
+/* Capitaliza la primera letra de los elementos de texto */
 *:first-letter {
     text-transform: capitalize;
 }
 
+/* Estilos para elementos con bordes redondeados */
 .roundBorder {
+    /* Bordes redondeados con un radio de 5px */
     border-radius: 5px;
 }
 
+/* Estilos para el contenedor de la lista de tareas */
 .list {
+    /* Márgenes automáticos para centrar horizontalmente el contenedor */
     margin: 25px auto;
+    /* Espaciado interno del contenedor */
     padding: 25px;
+    /* Color de fondo del contenedor */
     background-color: var(--light);
-    width: 100%;
+    /* Ancho máximo del contenedor */
     max-width: 350px;
+    /* Ancho del contenedor */
+    width: 100%;
 }
 
+/* Estilos para el contenedor de la fecha */
 .date {
+    /* Diseño flexible para alinear elementos dentro del contenedor */
     display: flex;
+    /* Alinea los elementos al centro verticalmente */
     align-items: center;
+    /* Distribuye el espacio entre los elementos de manera uniforme */
     justify-content: space-between;
 }
 
+/* Estilos para el contenedor derecho de la fecha */
 .dateRight {
+    /* Diseño flexible para alinear elementos dentro del contenedor */
     display: flex;
+    /* Alinea los elementos al centro verticalmente */
     align-items: center;
 }
 
+/* Estilos para el número de la fecha */
 #dateNumber {
+    /* Tamaño de la fuente */
     font-size: 50px;
 }
 
+/* Estilos para el texto del día de la semana */
 #dateText {
+    /* Espaciado entre letras */
     letter-spacing: 3px;
+    /* Convierte el texto a mayúsculas */
     text-transform: uppercase;
 }
 
+/* Estilos para los elementos de la fecha (mes, número y texto) */
 #dateMonth,
 #dateNumber,
-#dateText  {
+#dateText {
+    /* Peso de la fuente en negrita */
     font-weight: bold;
 }
 
+/* Estilos para el mes y el año en la fecha */
 #dateMonth,
 #dateYear {
+    /* Margen a la izquierda */
     margin-left: 7px;
+    /* Tamaño de la fuente */
     font-size: 20px;
 }
 
+/* Estilos para el formulario */
 form {
+    /* Márgenes superior e inferior */
     margin: 20px 0;
+    /* Diseño de cuadrícula para los elementos del formulario */
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 35px auto;
     grid-column-gap: 15px;
 }
 
+/* Estilos para el campo de entrada de texto */
 input {
+    /* Elimina los bordes del campo de entrada */
     border: none;
+    /* Espaciado interno a la izquierda */
     padding-left: 10px;
+    /* Color de fondo del campo de entrada */
     background-color: var(--diabled);
 }
 
+/* Estilos para el campo de entrada de texto cuando está en foco */
 input:focus {
+    /* Elimina el contorno por defecto del campo de entrada */
     outline: none;
 }
 
+/* Estilos para los botones del formulario */
 .addTaskButton,
 .orderButton {
+    /* Elimina los bordes de los botones */
     border: none;
+    /* Peso de la fuente en negrita */
     font-weight: bold;
+    /* Cambia el cursor a un puntero al pasar sobre el botón */
     cursor: pointer;
 }
 
+/* Estilos específicos para el botón de agregar tarea */
 .addTaskButton {
+    /* Altura del botón */
     height: 35px;
+    /* Bordes redondeados del botón */
     border-radius: 50%;
+    /* Tamaño de la fuente dentro del botón */
     font-size: 18px;
+    /* Color de fondo del botón */
     background-color: var(--diabled);
 }
 
+/* Estilos específicos para el botón de ordenar tareas */
 .orderButton {
+    /* Color de fondo del botón */
     background-color: var(--secondary);
+    /* Color del texto en el botón */
     color: var(--light);
 }
 
+/* Estilos para los elementos de las tareas */
 .task {
+    /* Color de fondo de las tareas */
     background-color: var(--primary);
+    /* Espaciado interno de las tareas */
     padding: 15px;
+    /* Margen superior para separar tareas */
     margin-top: 15px;
+    /* Color del texto en las tareas */
     color: var(--light);
+    /* Cambia el cursor a un puntero al pasar sobre la tarea */
     cursor: pointer;
 }
 
+/* Estilos para las tareas completadas */
 .done {
+    /* Color de fondo de las tareas completadas */
     background-color: var(--diabled);
+    /* Texto tachado para indicar que la tarea está completada */
     text-decoration: line-through;
+    /* Color del texto en las tareas completadas */
     color: var(--dark);
 }
