@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Especifica que el documento es HTML5 -->
     <meta charset="UTF-8">
+    <!-- Asegura compatibilidad con Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Configura el viewport para ser responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparecerá en la pestaña del navegador -->
     <title>Lista de tareas</title>
+
+    <!-- Enlace a Google Fonts para usar la fuente 'Lato' -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS externo para los estilos de la página -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Enlace al archivo JavaScript externo que contiene la lógica de la lista de tareas -->
     <script src="script.js" type="text/javascript" defer></script>
 </head>
+
 <body>
+    <!-- Contenedor principal de la lista de tareas -->
     <div class="list roundBorder">
+        <!-- Sección que muestra la fecha -->
         <div class="date">
             <div class="dateRight">
+                <!-- Elemento que mostrará el número del día -->
                 <div id="dateNumber"></div>
                 <div>
+                    <!-- Elemento que mostrará el mes -->
                     <div id="dateMonth"></div>
+                    <!-- Elemento que mostrará el año -->
                     <div id="dateYear"></div>
                 </div>
             </div>
+            <!-- Elemento que mostrará el nombre del día (ej. Lunes, Martes) -->
             <div id="dateText"></div>
         </div>
-        <form onsubmit="addNewTask(event)" >
+
+        <!-- Formulario para agregar nuevas tareas -->
+        <!-- Llama a la función JavaScript 'addNewTask()' cuando se envía el formulario -->
+        <form onsubmit="addNewTask(event)">
+            <!-- Campo de texto donde el usuario introduce el nombre de la tarea -->
             <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <!-- Botón para añadir la nueva tarea a la lista -->
             <button type="submit" class="addTaskButton">+</button>
+            <!-- Botón para ordenar las tareas, que llama a la función 'renderOrderedTasks()' -->
             <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
         </form>
+
+        <!-- Contenedor donde se renderizarán las tareas dinámicamente -->
         <div id="tasksContainer"></div>
     </div>
 </body>
